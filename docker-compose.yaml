@@ -1,0 +1,10 @@
+version: '3'
+services:
+
+  database:
+    image: postgres:9-alpine
+    container_name: atlas-demo-database
+    environment:
+      POSTGRES_DB: atlas-demo
+    ports:
+      - 5432:5432
