@@ -5,7 +5,7 @@ export default {
 
   http: {
     listen: {
-      port: process.env.PORT,
+      port: Number(process.env.PORT),
     },
   },
 }
