@@ -1,4 +1,6 @@
 #!/bin/bash
 
 make
+
+export NODE_OPTIONS="--trace-deprecation --trace-warnings"
 exec node  -r source-map-support/register -r dotenv/config .
