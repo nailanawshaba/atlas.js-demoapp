@@ -14,6 +14,7 @@ const app = Application.init({
 if (require.main === module || cluster.isWorker) {
   process.once('SIGINT', exit)
   process.once('SIGTERM', exit)
+  process.on('unhandledRejection', fatal)
 
   app.start()
     .catch(fatal)
