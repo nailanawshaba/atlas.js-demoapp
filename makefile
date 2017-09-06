@@ -44,7 +44,7 @@ clean:
 
 # Delete all the .js and .js.map files (excluding any potential dotfiles with .js extension)
 distclean: clean
-	find packages test \
+	find . \
 		\( \
 			-name '*.js' -or -name '*.js.map' \
 		\) \
